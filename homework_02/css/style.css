@@ -70,8 +70,13 @@ write your code here
 	}
 
 /* Task 4 */
-	section, .tm-sidebar {   
+	/*section, .tm-sidebar {    */
+	.tm-content-box, .tm-sidebar, .blocks {   
 		box-shadow: 0px 0px 4px 3px silver;
+	}
+
+	.blocks .tm-content-box  {
+		box-shadow: none;
 	}
 	
 /* Task 5 */		
@@ -107,6 +112,7 @@ write your code here
 	a.text::after {
 		content: "New";
 		color:red;
+		display: inline-block;
 		vertical-align: super;
 		font-size: 11px;
 	}
