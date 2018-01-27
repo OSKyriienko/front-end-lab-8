@@ -104,14 +104,14 @@ write your code here
 	a:hover {
 		color: #76cdd7;
 	}
-	a.text:after {
+	a.text::after {
 		content: "New";
 		color:red;
 		vertical-align: super;
 		font-size: 11px;
 	}
 
-	a:not(.text):after {
+	a:not(.text)::after {
 		content: ".";
 		font-size: 11px;
 	}
