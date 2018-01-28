@@ -1,0 +1,90 @@
+body {
+  background-color: #dcbb9a; }
+
+#content {
+  background-color: #ffffff;
+  width: 62%;
+  margin: 0 auto;
+  padding: 10px 20px; }
+  #content h1 {
+    text-align: center;
+    color: #893c00;
+    text-transform: none; }
+  #content p {
+    font: normal 16px "Times New Roman";
+    color: #000000; }
+  #content h2 {
+    color: #893c00; }
+  #content .img-left {
+    float: left;
+    border: 2px solid #893c00;
+    padding: 3px;
+    margin: 0 20px 10px 0; }
+  #content div.brief {
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    background-color: #fadcba;
+    width: 45%;
+    margin: 0 20px 10px 0;
+    padding: 15px; }
+  #content a {
+    color: #3d70a1;
+    font: normal 16px "Times New Roman"; }
+  #content .img-right {
+    float: right;
+    border: 2px solid #893c00;
+    padding: 3px;
+    margin: 0 0 10px 20px; }
+  #content caption {
+    text-align: right;
+    font: normal 16px "Times New Roman"; }
+  #content table {
+    border-collapse: collapse;
+    margin-bottom: 60px; }
+    #content table th {
+      font-size: 17px;
+      text-align: left;
+      text-transform: uppercase;
+      background-color: #e0e0e0;
+      padding: 10px 15px; }
+      #content table th:not(:last-of-type) {
+        border-right: 1px solid white; }
+    #content table td {
+      color: #000000;
+      background-color: #ffffff;
+      padding: 10px 15px;
+      border-bottom: 1px solid #e0e0e0;
+      font: normal 16px "Times New Roman"; }
+  #content form p.form {
+    margin: 0 0 5px 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: #777777; }
+  #content form input:not([type='submit']) {
+    width: 100%;
+    margin-bottom: 10px; }
+  #content form .user {
+    display: inline-block;
+    width: 49.5%; }
+    #content form .user:last-of-type {
+      float: right; }
+  #content form textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 150px;
+    max-height: 300px; }
+  #content form input[type="submit"] {
+    color: #3d70a1;
+    background-color: transparent;
+    text-transform: uppercase;
+    font: 18px Arial;
+    border: 1px solid #3d70a1;
+    margin: 20px 0 30px 0;
+    padding: 10px 50px; }
+    #content form input[type="submit"]:hover {
+      cursor: pointer;
+      background-color: #3d70a1;
+      color: #ffffff; }
+
+/*# sourceMappingURL=style1.css.map */

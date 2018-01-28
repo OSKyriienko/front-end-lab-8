@@ -1,0 +1,141 @@
+@mixin bg_width($bg-color,$width) {
+	background-color: $bg-color;
+	width: $width;
+}
+
+@mixin img_data($float,$border,$padding,$margin) {
+	float: $float;
+	border: $border;
+	padding: $padding;
+	margin: $margin;	
+}
+
+@mixin mrg_pad($margin,$padding) {
+	margin: $margin;
+	padding: $padding;
+}
+
+@mixin brd_font($border,$font) {
+	border: $border;
+	font: $font;
+}
+
+body {
+	background-color:$body-bg-color;
+}
+
+#content {
+	@include bg_width($content-bg-color,62%);
+	@include mrg_pad(0 auto, 10px 20px);
+
+	h1 {
+		text-align:center;
+		color:$h-font-color;	
+		text-transform: $h1-text-transform;
+	}
+
+	p {
+		font: $text-font;
+		color: $p-color;
+	}
+
+	h2 {
+		color:$h-font-color;
+	}
+
+	.img-left {
+		@include img_data(left, 2px solid $h-font-color, 3px, 0 20px 10px 0);
+	}
+
+	div.brief {
+		display: $brief-display;
+		float: $brief-float;
+		box-sizing: border-box;
+		@include bg_width($brief-bg-color,$brief-width);
+		@include mrg_pad($brief-margin, 15px);
+	}
+
+	a {
+		color:$link-color;
+		font: $text-font;
+	}
+
+	.img-right {
+		@include img_data(right, 2px solid $h-font-color, 3px, 0 0 10px 20px);
+	}
+	
+	caption {
+		text-align:right;
+		font: $text-font;
+	}
+	
+	table {
+		border-collapse: collapse;
+		margin-bottom: 60px;
+
+		th {
+			font-size: 17px;
+			text-align:left;
+			text-transform: uppercase;
+			background-color: $th-bg-color;
+			padding: 10px 15px;	
+
+			&:not(:last-of-type) {
+				border-right: 1px solid white;
+			}
+		}
+
+		td {
+			color:$td-color;
+			background-color: $td-bg-color;
+			padding: 10px 15px;
+			border-bottom: 1px solid $th-bg-color;	
+			font: $text-font;
+		}
+	}	
+	
+	form {
+		
+		p.form {
+			@include mrg_pad(0 0 5px 0, 0);
+			text-transform: uppercase;
+			color: $p-form-color;
+		}
+
+		input:not([type='submit']){
+			width:100%;
+			margin-bottom: 10px;
+		}
+
+		.user {
+			display: inline-block;
+			width: 49.5%;
+
+			&:last-of-type {
+				float: right;
+			}
+		}
+
+		textarea {
+			width: 100%;
+			resize: vertical;			
+			min-height: 150px;
+			max-height: 300px;
+		}
+
+		input[type="submit"] {
+			color: $link-color;
+			background-color: transparent;
+			text-transform: uppercase;
+			font: 18px Arial;
+			border: 1px solid $link-color;
+			@include mrg_pad(20px 0 30px 0, 10px 50px);
+			
+			&:hover {
+				cursor:pointer;
+				background-color: $link-color;
+				color: $content-bg-color;
+			}
+		}
+	}	
+}
