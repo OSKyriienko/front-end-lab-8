@@ -14,7 +14,7 @@ console.log(result);
 function checkInputData(array) {	
 	for (var i=0; i<array.length; i++) {
 		if (array[i]<=0) return false;   //checking for empty/null values
-		if (Number.isNaN(array[i])) return false;  //checking for non-numeric values;
+		if (isNaN(array[i])) return false;  //checking for non-numeric values;
 	}	
 	array.sort(function(a,b) { 
 		return a-b;
