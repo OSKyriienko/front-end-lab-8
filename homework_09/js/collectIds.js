@@ -31,7 +31,7 @@ var movies = [
 
 function collectIds(array) {
 	let idArray = getTransformedArray(
-		getFilteredArray(movies, function(el) {
+		getFilteredArray(array, function(el) {
 			return el.rating > 3;
 		}), function(el) { 
 				return el.id;
