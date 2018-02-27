@@ -1,0 +1,44 @@
+/* Your styles goes here */
+.elem-list {
+	display: none;   
+}
+
+.main {
+	display: block;
+}
+
+div {
+	width: 250px;
+}
+
+ul {
+	margin-left: 15px;
+	padding: 0;
+	list-style-type: none;
+}
+
+i {
+	color: #bbbbbb;
+	vertical-align: bottom;
+}
+
+.folder > i {
+	color: #d59322;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+p:not(.empty):hover {
+	cursor: pointer;
+	background-color: #efefef;
+}
+
+p.empty {
+	font-style: italic;
+}
+
