@@ -1,0 +1,122 @@
+/* Your styles goes here */
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #1c1c1d;
+	color: #a79e7f;
+	font-family: serif;
+	box-sizing: border-box;
+
+}
+
+.thumbnails {
+	width: 100%;
+	height: 600px;
+	padding: 10px;
+}
+
+	.thumbnails h1 {
+		margin: 0;
+		color: #98967d;
+	}
+	.thumbnails .wrapper-tanks	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+.tank {
+	margin: 10px;
+	padding: 20px;
+	width: 250px;
+}
+
+.tank:hover {
+	background-color: #282828;
+}
+
+	.tank .tank-img {
+		width: 100%;
+	}	
+
+
+	.tank .tank-flag {
+		height: 15px;
+	}
+
+	.tank .tank-title {
+		text-align: center;
+		text-transform: uppercase;	
+		font-size: 20px;
+		font-weight: bold;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.tank .tank-level {
+		margin: 0 5px;
+		color: #98967d;
+	}
+
+	.tank .tank-model {
+		color: #d1ccb0;		
+	}
+
+
+.tank-details {
+	padding: 10px;
+}
+
+	.tank-details .tank-name {
+		font-size: 25px;
+		font-weight: bold; 
+	}
+
+	.tank-details .tank-name img{
+		margin-right: 10px;
+	}	
+
+	.tank-details .tank-details-model {
+		text-transform: uppercase;
+	}
+
+	.tank-details #tank-details-model {
+		text-transform: uppercase;
+		margin: 0 5px;
+	}
+
+	.tank-details p.link-back:hover {
+		color:#d1ccb0;
+	}
+
+
+.tank-info {
+	display: flex;
+}
+
+	.tank-info p {
+		font-size: 20px;
+	}
+
+	.tank-info .info {
+		width: 100%;
+	}
+	
+	.info .table {
+		border: 1px solid #a79e7f;
+		border-collapse: collapse;
+		width: 100%;	
+	}
+
+	.info .table td {
+			border: 1px solid #a79e7f;
+			padding: 10px;
+			color: #d1ccb0;
+	}
+
+	.info .table td.td-name {
+			width: 70%;
+	}
+
+
+
